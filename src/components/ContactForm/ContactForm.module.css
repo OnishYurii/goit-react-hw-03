@@ -1,0 +1,24 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 5px;
+  border: none;
+  max-width: 169px;
+  max-height: 56px;
+  margin: 0 auto;
+}

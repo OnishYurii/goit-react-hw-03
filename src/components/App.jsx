@@ -17,6 +17,12 @@ export const App = () => {
     contact.name.toLowerCase().includes(nameFilter.toLowerCase())
   );
 
+  const addContact = newContact => {
+    setContacts(actualContacts => {
+      return [...actualContacts, newContact];
+    });
+  };
+
   const deleteContacts = contactId => {
     setContacts(actualContacts => {
       return actualContacts.filter(contact => contact.id !== contactId);
@@ -26,7 +32,7 @@ export const App = () => {
   return (
     <div>
       <h1>Phonebook</h1>
-      <ContactForm />
+      <ContactForm onAdd={addContact} />
       <SearchBox value={nameFilter} onChange={setNameFilter} />
       <ContactList contacts={visibleContacts} onDelete={deleteContacts} />
     </div>
