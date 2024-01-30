@@ -13,11 +13,7 @@ body {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
-  background: url(./assets/background-image.jpg);
-  background-position: 0 0;
-  background-repeat: repeat;
-  animation: animated-bg 60s linear infinite;
-  height: 350px;
+  background: radial-gradient(circle farthest-side at center center, #f19d8d 0%, #e35221 100%);
 }
 
 input,
@@ -44,19 +40,9 @@ h2 {
   font-size: 16px;
 }
 
-/* .bg-ex-animation {
-  background: url(./assets/background-image.jpg);
-  background-position: 0 0;
-  background-repeat: repeat;
-  animation: animated-bg 60s linear infinite;
-  width: 100%;
-  height: 350px;
-} */
-@keyframes animated-bg {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 1000px;
-  }
+input {
+  border-radius: 5px;
+  outline: transparent;
+  padding-left: 10px;
+  height: 25px;
 }

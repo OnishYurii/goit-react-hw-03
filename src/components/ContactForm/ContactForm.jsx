@@ -32,11 +32,11 @@ export const ContactForm = ({ onAdd }) => {
       <Form className={css.form} autoComplete="off">
         <label htmlFor={nameFieldId}>Name</label>
         <Field className={css.input} type="text" name="name" id={nameFieldId} />
-        <ErrorMessage name="name" component="span" />
+        <ErrorMessage className={css.error} name="name" component="span" />
 
         <label htmlFor={numberFieldId}>Number</label>
         <Field className={css.input} type="text" name="number" id={numberFieldId} />
-        <ErrorMessage name="number" component="span" />
+        <ErrorMessage className={css.error} name="number" component="span" />
 
         <button className={css.button} type="submit">
           Add contact
